@@ -1,3 +1,15 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+jwt:
+  config:
+    key: itcast
 server:
   port: 9001
 spring:
@@ -5,24 +17,9 @@ spring:
     name: tensquare-base
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
+    password: ''
     url: jdbc:mysql://127.0.0.1:3306/tensquare_base?characterEncoding=utf-8
     username: root
-    password: 
   jpa:
     database: mysql
     show-sql: true
-
-eureka:
-  client:
-    service-url:
-        defaultZone: http://localhost:6868/eureka
-  instance:
-    prefer-ip-address: true
-
-feign:
-  hystrix:
-    enabled: true
-jwt:
-  config:
-    key: itcast
-
