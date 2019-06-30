@@ -25,5 +25,8 @@ spring:
     show-sql: true
   rabbitmq:
     host: 127.0.0.1
+  
+sms:
+  ip: 127.0.0.1
    
    
