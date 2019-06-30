@@ -11,6 +11,8 @@ spring:
   jpa:
     database: mysql
     show-sql: true
+  rabbitmq:
+    host: 127.0.0.1
 jwt:
   config:
     key: itcast
